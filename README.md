@@ -48,7 +48,7 @@ general:
 
 ## Ajouter votre clé API
 
-Ouvre le fichier `API.py` et remplace la valeur de `API_KEY` par ta clé personnelle :
+Créer le fichier `API.py` et mettre la valeur de `API_KEY` par ta clé personnelle :
 
 ```python
 API_KEY = "YOUR_API_KEY"
@@ -56,7 +56,7 @@ API_KEY = "YOUR_API_KEY"
 
 ---
 
-## 🚀 Lancer le script
+## Lancer le script
 
 Une fois le serveur lancé et la clé API renseignée, exécute simplement :
 
