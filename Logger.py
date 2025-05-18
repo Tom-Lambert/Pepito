@@ -1,9 +1,16 @@
 import os
 
+# Chemin vers le fichier de log	
 LOGFILE = "{}/suspicious_domains.log".format(os.path.dirname(os.path.abspath(__file__)))
 
-def Logger(object):
+class Logger:
     def __init__(self, print_logs: bool = False):
-        raise NotImplementedError
+        self.print_logs = print_logs
+
     def alert(self, message: str):
-        raise NotImplementedError
+        # Ouverture mode ajout
+        with open(LOGFILE, "a") as f:
+            f.write(message + "\n")
+
+        if self.print_logs:
+            print(message)
